@@ -38,3 +38,10 @@ tmux new -s zksync
 git clone git@github.com:matter-labs/local-setup.git
 cd local-setup
 ./start.sh
+
+
+# Connecting to the docker instance
+docker ps
+# If the zksync one is 528317d4af78:
+docker exec -it 528317d4af78 bash
+
